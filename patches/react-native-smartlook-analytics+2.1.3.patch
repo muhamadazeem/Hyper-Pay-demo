@@ -1,0 +1,25 @@
+diff --git a/node_modules/react-native-smartlook-analytics/android/src/main/java/com/smartlook/reactnative/SmartlookAnalyticsModuleImpl.kt b/node_modules/react-native-smartlook-analytics/android/src/main/java/com/smartlook/reactnative/SmartlookAnalyticsModuleImpl.kt
+index 8f8d744..cf33210 100644
+--- a/node_modules/react-native-smartlook-analytics/android/src/main/java/com/smartlook/reactnative/SmartlookAnalyticsModuleImpl.kt
++++ b/node_modules/react-native-smartlook-analytics/android/src/main/java/com/smartlook/reactnative/SmartlookAnalyticsModuleImpl.kt
+@@ -386,7 +386,7 @@ object SmartlookAnalyticsModuleImpl {
+ 
+         for (i in 0 until recordingMaskList.size()) {
+             val recordingMask = recordingMaskList.getMap(i)
+-            val maskType = this.getRecordingMaskType(recordingMask)
++            val maskType = this.getRecordingMaskType(recordingMask!!)
+             val maskElement = this.getRecordingMaskElementWithType(recordingMask, maskType)
+ 
+             recordingMasks.add(maskElement)
+@@ -428,9 +428,9 @@ object SmartlookAnalyticsModuleImpl {
+ 
+         for (i in 0 until classNames.size()) {
+             val classNameValueTuple = classNames.getArray(i)
+-            val sensitivityValue = classNameValueTuple.getBoolean(1)
++            val sensitivityValue = classNameValueTuple?.getBoolean(1)
+ 
+-            when (classNameValueTuple.getInt(0)) {
++            when (classNameValueTuple?.getInt(0)) {
+                 0 -> EditText::class.isSensitive = sensitivityValue
+                 1 -> WebView::class.isSensitive = sensitivityValue
+             }

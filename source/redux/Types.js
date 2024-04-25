@@ -1,0 +1,36 @@
+//Authentication
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_UP = 'SIGN_UP';
+export const SIGN_OUT = 'SIGN_OUT';
+export const EXISTING_USER = 'EXISTING_USER';
+export const USERTOKEN = 'USERTOKEN';
+export const CREATE_USER_SUCCESS ='CREATE_USER_SUCCESS';
+export const LOGIN_SUCCESS = 'USER_LOGIN_SUCCESS';
+export const LOGIN_FAILURE = 'USER_LOGIN_FAILURE';
+export const LOGOUT = 'USER_LOGOUT';
+
+
+export const NAFATH_REQUEST = 'NAFATH_REQUEST';
+export const NAFATH_INPROGRESS = 'NAFATH_INPROGRESS';
+export const NAFATH_COMPLETED ='NAFATH_COMPLETED';
+export const NAFATH_EXPIRED = 'NAFATH_EXPIRED';
+export const NAFATH_REJECTED = 'NAFATH_REJECTED';
+export const NAFATH_LIMIT_REACHED = 'NAFATH_LIMIT_REACHED';
+
+//Drawer
+
+export const NOTIFICATION_DRAWER = 'NOTIFICATION_DRAWER'
+export const OTHER_DRAWER ='OTHER_DRAWER'
+
+//User
+export const ENGLISH ="ENGLISH";
+export const ARABIC ="ARABIC";
+
+//Investor
+
+export const STATIC_DATA="STATICDATA"
+export const INVESTOR_PROFILE_DATA="INVESTORPROFILEDATA"
+
+
+export const DEEP_LINK = 'DEEP_LINK'
+export const SHOW_ALERT = 'SHOW_ALERT'
